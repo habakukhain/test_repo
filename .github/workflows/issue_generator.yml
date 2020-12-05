@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v2.1.0
       - run:
           python -m pip install --upgrade pip
-          pip install PyGithub os
+          pip install PyGithub
           python issue_generator.py
         env:
           git_token: ${{secrets.GH_TOKEN}}
