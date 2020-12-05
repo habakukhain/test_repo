@@ -16,7 +16,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2.1.0
       - run: |
-          pip install numpy json requests github os pprint
+          python -m pip install --upgrade pip
+          pip install github os
           python issue_generator.py
         env:
           git_token: ${{secrets.GH_TOKEN}}
