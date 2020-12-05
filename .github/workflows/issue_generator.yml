@@ -18,7 +18,7 @@ jobs:
       - run:
           python -m pip install --upgrade pip
       - run:
-          pip install PyGithub os-sys
+          pip install PyGithub
       - run:
           python issue_generator.py
         env:
