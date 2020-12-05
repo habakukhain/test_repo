@@ -24,7 +24,7 @@ jobs:
        run: |
          python issue_generator.py
        env:
-        git_token: ${{token.key}}
+        git_token: ${{GH_TOKEN.key}}
         
         
         
