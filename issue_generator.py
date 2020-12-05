@@ -1,10 +1,6 @@
 
-import numpy as np
-import json
-import requests
 from github import Github
 import os
-from pprint import pprint
 
 token = os.getenv('git_token')
 g = Github(token)
@@ -18,4 +14,4 @@ i = repo.create_issue(
         repo.get_label("good first issue")
     ]
 )
-pprint(i)
+print(i)
